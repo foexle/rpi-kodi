@@ -5,13 +5,13 @@ FROM resin/rpi-raspbian
 RUN apt-get update && apt-get upgrade
 
 # Dependency 
-RUN apt-get install wget
+RUN apt-get install -y wget
 
 # Add Kodi 16.1 Repository
 RUN echo 'deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /' | sudo tee --append /etc/apt/sources.list.d/pipplware_jessie.list
 RUN wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -
 
-RUN apt-get install \
+RUN apt-get install -y \
 	kodi \
 	supervisor \
 	wget \
