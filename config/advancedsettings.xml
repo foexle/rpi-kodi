@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advancedsettings>
+  <video>
+    <defaultplayer>dvdplayer</defaultplayer>
+    <defaultdvdplayer>dvdplayer</defaultdvdplayer>
+  </video>
+  <services>
+    <esallinterfaces>true</esallinterfaces>
+    <webserver>true</webserver>
+    <zeroconf>true</zeroconf>
+  </services>
+  <gui>
+    <algorithmdirtyregions>3</algorithmdirtyregions>
+    <nofliptimeout>0</nofliptimeout>
+  </gui>
+  <splash>false</splash>
+  <lookandfeel>
+    <enablerssfeeds>false</enablerssfeeds>
+  </lookandfeel>
+  <cputempcommand>sed -e 's/\([0-9]*\)[0-9]\{3\}.*/\1 C/' /sys/class/thermal/thermal_zone0/temp</cputempcommand>
+  <gputempcommand>/opt/vc/bin/vcgencmd measure_temp | sed "s,temp=\([0-9]*\)\.[0-9]'C,\1 C,"</gputempcommand>
+
+  <videolibrary>
+    <allitemsonbottom>true</allitemsonbottom>  <!-- sorts the "*All" items at the bottom of the list when in Ascending order -->
+    <backgroundupdate>false</backgroundupdate> <!-- set to "true" to hide the video scanner dialog from the GUI -->
+    <cleanonupdate>true</cleanonupdate>  <!-- default set to false to prevent Kodi from removing items from the database while updating.  -->
+    <usefasthash>true</usefasthash> <!-- defaults to true. Set to false in order to skip hashing based on the folders modification time. -->
+    <hideemptyseries>false</hideemptyseries>  <!-- set to "true" to hide empty series in the video library and prevent empty series from being removed during a library cleanup. -->
+    <recentlyaddeditems>35</recentlyaddeditems> <!-- number of recently added items. Defaults to 25 -->
+  </videolibrary>
+</advancedsettings>
