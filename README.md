@@ -13,10 +13,14 @@ It's needed to forward some ports on start of the container
 The privileged option is a high security risk so please ensure your running container should not be accessable from the WAN.
 
 
-
 # Tested on
 * Raspberry 3
 
 
+# TODO
+* Samba and NFS share network scan not working 
+* Reselution litte bit weired
 
+# Troubleshoots
+To get working NFS you need to your storage address an export path
 
